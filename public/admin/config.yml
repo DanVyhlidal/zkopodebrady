@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/zkopodebrady # PLEASE UPDATE THIS to your GitHub repository
+  repo: DanVyhlidal/zkopodebrady
   branch: main
 
 local_backend: true
