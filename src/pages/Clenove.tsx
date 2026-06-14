@@ -105,7 +105,7 @@ export default function Clenove() {
           <button className="lightbox-close" onClick={() => { setLightboxImage(null); setIsZoomed(false); }}>&times;</button>
           <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
             <img 
-              src={lightboxImage} 
+              src={getAssetPath(lightboxImage)} 
               alt="Detail" 
               className={isZoomed ? 'zoomed' : ''}
               onClick={(e) => { e.stopPropagation(); setIsZoomed(!isZoomed); }}
