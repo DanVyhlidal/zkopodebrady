@@ -1,5 +1,7 @@
 import './Vycvik.css';
 
+const getAssetPath = (path: string) => path.startsWith('/') ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path;
+
 export default function Vycvik() {
   return (
     <div className="vycvik-page">
@@ -9,7 +11,7 @@ export default function Vycvik() {
         <div className="vycvik-column">
           <h3 className="column-title">ZAČÁTEČNÍK / POKROČILÝ</h3>
           <div className="vycvik-image-placeholder">
-            <img src="/images/vycvik/zacatecnici_thumbnail.jpg" alt="Začátečník / Pokročilý" />
+            <img src={getAssetPath("/images/vycvik/zacatecnici_thumbnail.jpg")} alt="Začátečník / Pokročilý" />
           </div>
 
           <ul className="info-list">
@@ -62,7 +64,7 @@ export default function Vycvik() {
         <div className="vycvik-column">
           <h3 className="column-title">SPORTOVNÍ KYNOLOGIE</h3>
           <div className="vycvik-image-placeholder">
-            <img src="/images/vycvik/Sportovni_kynologie_thumbnail.jpg" alt="Sportovní Kynologie" />
+            <img src={getAssetPath("/images/vycvik/Sportovni_kynologie_thumbnail.jpg")} alt="Sportovní Kynologie" />
           </div>
 
           <ul className="info-list">

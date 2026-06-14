@@ -1,5 +1,7 @@
 import './Uzitecne.css';
 
+const getAssetPath = (path: string) => path.startsWith('/') ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path;
+
 export default function Uzitecne() {
   const links = [
     { title: 'Zkušební řády', url: 'https://www.kynologie.cz/zkusebni-rady.htm', image: '/images/uzitecne/zkusebni_rady.png' },
@@ -19,7 +21,7 @@ export default function Uzitecne() {
           <div key={index} className="link-row">
             <div className="link-icon-column">
               {link.image ? (
-                <img src={link.image} alt={link.title} className="uzitecne-image" />
+                <img src={getAssetPath(link.image)} alt={link.title} className="uzitecne-image" />
               ) : (
                 <div className="link-icon-placeholder">
                   {/* Empty placeholder to maintain layout */}
