@@ -36,6 +36,9 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          VITE_GOOGLE_DRIVE_API_KEY: ${{ secrets.VITE_GOOGLE_DRIVE_API_KEY }}
+          VITE_GOOGLE_DRIVE_ROOT_FOLDER_ID: ${{ secrets.VITE_GOOGLE_DRIVE_ROOT_FOLDER_ID }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
