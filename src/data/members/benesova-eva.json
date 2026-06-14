@@ -8,8 +8,7 @@
       "shows": "",
       "breeding": "",
       "bonitation": "",
-      "image": "/images/uploads/benesova-eva-nicola.jpg",
-      "imagePosition": "45% 47%"
+      "image": "/images/uploads/benesova-eva-nicola.jpg"
     },
     {
       "name": "Gilli King Pet",
@@ -18,8 +17,7 @@
       "shows": "",
       "breeding": "",
       "bonitation": "",
-      "image": "/images/uploads/benesova-eva-gilli-king-pet.jpg",
-      "imagePosition": "50% 53%"
+      "image": "/images/uploads/benesova-eva-gilli-king-pet.jpg"
     },
     {
       "name": "Hoky Aykmar",
@@ -28,8 +26,7 @@
       "shows": "VD",
       "breeding": "",
       "bonitation": "4CX1/P",
-      "image": "/images/uploads/benesova-eva-hoky-aykmar.jpg",
-      "imagePosition": "48% 43%"
+      "image": "/images/uploads/benesova-eva-hoky-aykmar.jpg"
     }
   ]
 }
