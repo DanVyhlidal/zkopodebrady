@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: your-username/zkopodebrady # PLEASE UPDATE THIS to your GitHub repository
+  branch: main
+
+local_backend: true
+locale: 'cs'
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "news"
+    label: "Aktuality"
+    folder: "src/data/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titulek", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Externí odkaz (nepovinné, např. Rajče)", name: "external_link", widget: "string", required: false}
+      - {label: "Obsah", name: "body", widget: "markdown"}
+  
+  - name: "members"
+    label: "Členové"
+    folder: "src/data/members"
+    create: true
+    format: "json"
+    extension: "json"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Jméno člena", name: "name", widget: "string"}
+      - label: "Psi"
+        name: "dogs"
+        widget: "list"
+        fields:
+          - {label: "Jméno psa", name: "name", widget: "string"}
+          - {label: "Datum narození", name: "dob", widget: "string", required: false}
+          - {label: "Zkoušky", name: "exams", widget: "string", required: false}
+          - {label: "Výstavy", name: "shows", widget: "string", required: false}
+          - {label: "Chovnost", name: "breeding", widget: "string", required: false}
+          - {label: "Bonitace", name: "bonitation", widget: "string", required: false}
+          - {label: "Fotka", name: "image", widget: "image", required: false}
+

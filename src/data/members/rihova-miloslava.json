@@ -1,0 +1,23 @@
+{
+  "name": "Říhová Miloslava",
+  "dogs": [
+    {
+      "name": "Irba Odysea plus",
+      "dob": "17. 3. 2018",
+      "exams": "ZVV1",
+      "shows": "Výborná",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/rihova-miloslava-irba-odysea-plus.jpg"
+    },
+    {
+      "name": "Iketa Odysea plus",
+      "dob": "17. 3. 2018",
+      "exams": "",
+      "shows": "Vítěz třídy dorostu",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/rihova-miloslava-iketa-odysea-plus.jpg"
+    }
+  ]
+}

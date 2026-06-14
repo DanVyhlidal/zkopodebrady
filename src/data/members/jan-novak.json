@@ -1,0 +1,13 @@
+{
+  "name": "Jan Novák",
+  "dogs": [
+    {
+      "name": "Rex",
+      "dob": "2020-05-10",
+      "exams": "ZOP, ZZO",
+      "shows": "Výborný 1",
+      "breeding": "Chovný",
+      "image": ""
+    }
+  ]
+}

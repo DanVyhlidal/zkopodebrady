@@ -1,0 +1,42 @@
+.provozni-rad-page {
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.provozni-rad-intro {
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.provozni-rad-intro p {
+  margin-bottom: 0.5rem;
+}
+
+.rules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rule-item h3 {
+  font-size: 1.15rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.rule-item .warning-text {
+  color: #d32f2f;
+}
+
+.rule-item ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.rule-item ul li {
+  margin-bottom: 0.3rem;
+  color: var(--text-color);
+}

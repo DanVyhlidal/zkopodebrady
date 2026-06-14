@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #022436;
+  /* Dark Navy for header/footer */
+  --accent-color: #c95A0A;
+  /* Active Orange */
+  --secondary-color: #525A34;
+  /* Olive Green for titles */
+  --bg-color: #ffffff;
+  /* Light grey body background */
+  --content-bg: #ffffff;
+  /* White content box */
+  --text-color: #022436;
+  --text-light: #666666;
+  --divider-color: #dddddd;
+  --member-title: #8b7a5f;
+  /* Olive green */
+  --white: #ffffff;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-header {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}

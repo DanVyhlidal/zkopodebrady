@@ -1,0 +1,53 @@
+.uzitecne-page {
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  /* Tall vertical stack approx 100px */
+  margin: 3rem auto 2rem;
+  width: fit-content;
+}
+
+.link-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link-icon-column {
+  flex-shrink: 0;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.uzitecne-image {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.link-icon-placeholder {
+  width: 40px;
+  height: 40px;
+  color: var(--accent-color);
+}
+
+.link-text-column a {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.link-text-column a:hover {
+  color: var(--accent-color);
+  text-decoration-color: var(--accent-color);
+}

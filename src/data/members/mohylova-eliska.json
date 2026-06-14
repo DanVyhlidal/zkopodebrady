@@ -1,0 +1,23 @@
+{
+  "name": "Mohylová Eliška",
+  "dogs": [
+    {
+      "name": "Cyrila z Mamutova dvora",
+      "dob": "2.7. 2022",
+      "exams": "BH-VT, IGP-1",
+      "shows": "",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/mohylova-eliska-cyrila-z-mamutova-dvora.jpg"
+    },
+    {
+      "name": "Egon z Mamutova dvora",
+      "dob": "31.12. 2022",
+      "exams": "",
+      "shows": "",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/mohylova-eliska-egon-z-mamutova-dvora.jpg"
+    }
+  ]
+}

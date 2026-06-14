@@ -1,0 +1,35 @@
+{
+  "name": "Benešová Eva",
+  "dogs": [
+    {
+      "name": "Nicola",
+      "dob": "",
+      "exams": "",
+      "shows": "",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/benesova-eva-nicola.jpg",
+      "imagePosition": "45% 47%"
+    },
+    {
+      "name": "Gilli King Pet",
+      "dob": "31.5. 2017",
+      "exams": "BH, FPr1, FPr2, ZZO1",
+      "shows": "",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/benesova-eva-gilli-king-pet.jpg",
+      "imagePosition": "50% 53%"
+    },
+    {
+      "name": "Hoky Aykmar",
+      "dob": "8.8. 2014",
+      "exams": "BH, IPO1, IPO2, IPO3, Spr2",
+      "shows": "VD",
+      "breeding": "",
+      "bonitation": "4CX1/P",
+      "image": "/images/uploads/benesova-eva-hoky-aykmar.jpg",
+      "imagePosition": "48% 43%"
+    }
+  ]
+}

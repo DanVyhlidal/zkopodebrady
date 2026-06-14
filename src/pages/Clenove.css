@@ -1,0 +1,210 @@
+.clenove-page {
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.member-card {
+  width: 100%;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eaeef2;
+  box-sizing: border-box;
+}
+
+.member-name {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.dogs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.dog-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 1.5rem 3rem;
+  border-radius: 12px;
+  border: 1px solid #edf1f5;
+}
+
+.dog-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.dog-info p {
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.info-label {
+  color: var(--primary-color);
+  font-weight: 700;
+  min-width: 170px;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  color: #022436;
+  font-weight: 400;
+  font-size: 1.05rem;
+}
+
+.dog-image-container {
+  width: 260px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border: 3px solid var(--white);
+  position: relative;
+  cursor: pointer;
+}
+
+.dog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.dog-image-container:hover .dog-image {
+  transform: scale(1.05);
+}
+
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+  font-size: 2rem;
+}
+
+.dog-image-container:hover .photo-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .dog-card {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .dog-image-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .member-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .info-label {
+    min-width: 100%;
+    margin-bottom: 0.2rem;
+  }
+
+  .dog-info p {
+    flex-direction: column;
+  }
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.lightbox-content img.zoomed {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+.lightbox-close {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  padding: 20px;
+  top: 10px;
+  right: 20px;
+  font-size: 4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  opacity: 1;
+}

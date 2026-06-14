@@ -1,0 +1,23 @@
+{
+  "name": "Vyhlídalová Patricie",
+  "dogs": [
+    {
+      "name": "Yaggo z Krupičkova mlýna",
+      "dob": "2. 8. 2025",
+      "exams": "",
+      "shows": "VN1 - vítěz třídy dorostu",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/vyhlidalova-patricie-yaggo.jpg"
+    },
+    {
+      "name": "Fanda",
+      "dob": "16.2. 2016",
+      "exams": "BH",
+      "shows": "",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/vyhlidalova-patricie-fanda.jpg"
+    }
+  ]
+}

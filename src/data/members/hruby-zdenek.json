@@ -1,0 +1,32 @@
+{
+  "name": "Hrubý Zdeněk",
+  "dogs": [
+    {
+      "name": "Dyna Hari Ambro",
+      "dob": "28.3. 2021",
+      "exams": "BH,ZVV1, IGP1,2,FPr1, SPr1, IGP-3",
+      "shows": "",
+      "breeding": "5V/1P",
+      "bonitation": "",
+      "image": "/images/uploads/hruby-zdenek-dyna-hari-ambro.jpg"
+    },
+    {
+      "name": "Bastet vom Haus Gallenedr",
+      "dob": "25.3. 2021",
+      "exams": "BH, ZVV1, Spr-1, IGP-1",
+      "shows": "",
+      "breeding": "5V/1P",
+      "bonitation": "",
+      "image": "/images/uploads/hruby-zdenek-bastet-vom-haus-gallenedr.jpg"
+    },
+    {
+      "name": "Niki z Berounské bašty",
+      "dob": "25.1. 2017",
+      "exams": "ZVV1",
+      "shows": "",
+      "breeding": "5V/2P",
+      "bonitation": "",
+      "image": "/images/uploads/hruby-zdenek-niki-z-berounske-basty.jpg"
+    }
+  ]
+}

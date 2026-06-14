@@ -1,0 +1,32 @@
+{
+  "name": "Jankovič Alexandr",
+  "dogs": [
+    {
+      "name": "Nella",
+      "dob": "5.3. 2015",
+      "exams": "ZZO, ZZO1, BH, SPr1, SPr2, ZPO1",
+      "shows": "",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/jankovic-alexandr-nella.jpg"
+    },
+    {
+      "name": "Alma",
+      "dob": "14.2. 2021",
+      "exams": "BH",
+      "shows": "",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/jankovic-alexandr-alma.jpg"
+    },
+    {
+      "name": "Kira",
+      "dob": "13.1. 2022",
+      "exams": "BH",
+      "shows": "",
+      "breeding": "",
+      "bonitation": "",
+      "image": "/images/uploads/jankovic-alexandr-kira.jpg"
+    }
+  ]
+}

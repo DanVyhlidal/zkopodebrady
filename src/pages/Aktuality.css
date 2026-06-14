@@ -1,0 +1,83 @@
+.aktuality-page {
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card {
+  display: flex;
+  gap: 1.75rem;
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.news-card:last-child {
+  border-bottom: none;
+}
+
+.news-icon-column {
+  flex-shrink: 0;
+  padding-top: 5px;
+}
+
+.info-icon {
+  width: 56px;
+  height: 56px;
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: serif;
+  font-style: italic;
+}
+
+.news-content-column {
+  flex: 1;
+}
+
+.news-date {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 0.2rem;
+}
+
+.news-title {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.news-content {
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.news-content p {
+  margin-bottom: 1rem;
+}
+
+.news-content strong {
+  font-weight: 700;
+}
+
+.external-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.external-link:hover {
+  color: var(--accent-color);
+}
