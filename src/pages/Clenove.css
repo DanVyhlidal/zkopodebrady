@@ -208,3 +208,47 @@
 .lightbox-close:hover {
   opacity: 1;
 }
+
+/* Skeleton Loading */
+.skeleton-card {
+  border-color: #f0f0f0;
+}
+
+.skeleton-title {
+  height: 2.2rem;
+  width: 30%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-dog-card {
+  border-color: #f0f0f0;
+  background-color: #fafafa;
+}
+
+.skeleton-line {
+  height: 1.2rem;
+  width: 70%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-line:nth-child(2) { width: 60%; }
+.skeleton-line:nth-child(3) { width: 80%; }
+.skeleton-line:nth-child(4) { width: 50%; }
+
+.skeleton-image {
+  background-color: #e0e0e0;
+  border-color: #f0f0f0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}

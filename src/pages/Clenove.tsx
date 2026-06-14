@@ -20,6 +20,7 @@ interface Member {
 
 export default function Clenove() {
   const [members, setMembers] = useState<Member[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [isZoomed, setIsZoomed] = useState(false);
 
@@ -38,16 +39,19 @@ export default function Clenove() {
 
   useEffect(() => {
     async function loadMembers() {
+      setIsLoading(true);
       const modules = import.meta.glob('/src/data/members/*.json');
-      const loadedMembers: Member[] = [];
+      
+      const loadPromises = Object.values(modules).map(async (moduleFn) => {
+        const module = await moduleFn() as { default: Member };
+        return module.default;
+      });
 
-      for (const path in modules) {
-        const module = await modules[path]() as { default: Member };
-        loadedMembers.push(module.default);
-      }
-
+      const loadedMembers = await Promise.all(loadPromises);
       loadedMembers.sort((a, b) => a.name.localeCompare(b.name, 'cs'));
+      
       setMembers(loadedMembers);
+      setIsLoading(false);
     }
 
     loadMembers();
@@ -57,11 +61,30 @@ export default function Clenove() {
     <div className="clenove-page">
       <h2 className="page-header">Členové</h2>
       <div className="members-list">
-        {members.map((member, index) => (
-          <div key={index} className="member-card">
-            <h3 className="member-name">{member.name}</h3>
-            {member.dogs && member.dogs.length > 0 && (
+        {isLoading ? (
+          Array.from({ length: 3 }).map((_, idx) => (
+            <div key={`skeleton-${idx}`} className="member-card skeleton-card">
+              <div className="skeleton-title"></div>
               <div className="dogs-list">
+                <div className="dog-card skeleton-dog-card">
+                  <div className="dog-info">
+                    <div className="skeleton-line"></div>
+                    <div className="skeleton-line"></div>
+                    <div className="skeleton-line"></div>
+                    <div className="skeleton-line"></div>
+                    <div className="skeleton-line"></div>
+                  </div>
+                  <div className="dog-image-container skeleton-image"></div>
+                </div>
+              </div>
+            </div>
+          ))
+        ) : (
+          members.map((member, index) => (
+            <div key={index} className="member-card">
+              <h3 className="member-name">{member.name}</h3>
+              {member.dogs && member.dogs.length > 0 && (
+                <div className="dogs-list">
                 {member.dogs.map((dog, dIndex) => (
                   <div key={dIndex} className="dog-card">
                     <div className="dog-info">
@@ -84,6 +107,8 @@ export default function Clenove() {
                         src={dog.image ? getAssetPath(dog.image) : getAssetPath("/images/clenove/placeholder.png")}
                         alt={`Pes ${dog.name}`}
                         className="dog-image"
+                        loading="lazy"
+                        decoding="async"
                       />
                       {dog.image && (
                         <div className="photo-overlay">
@@ -96,7 +121,7 @@ export default function Clenove() {
               </div>
             )}
           </div>
-        ))}
+        )))}
       </div>
 
       {/* Lightbox Modal */}
