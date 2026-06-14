@@ -2,8 +2,6 @@ backend:
   name: github
   repo: DanVyhlidal/zkopodebrady
   branch: main
-  base_url: https://github.com
-  app_id: Ov23liR9IoQZNk7VluHT
 
 local_backend: true
 locale: 'cs'
