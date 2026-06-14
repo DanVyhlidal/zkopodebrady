@@ -90,6 +90,13 @@
   max-width: 1140px;
 }
 
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .main-footer {
   background-color: var(--primary-color);
   color: var(--white);
