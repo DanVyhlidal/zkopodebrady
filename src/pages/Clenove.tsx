@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import './Clenove.css';
 
+const getAssetPath = (path: string) => path.startsWith('/') ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path;
+
 interface Dog {
   name: string;
   dob?: string;
@@ -79,7 +81,7 @@ export default function Clenove() {
                       }
                     }}>
                       <img
-                        src={dog.image ? dog.image : "/images/clenove/placeholder.png"}
+                        src={dog.image ? getAssetPath(dog.image) : getAssetPath("/images/clenove/placeholder.png")}
                         alt={`Pes ${dog.name}`}
                         className="dog-image"
                       />
