@@ -18,7 +18,13 @@ export default function Vycvik() {
             <li>
               <span className="vycvik-icon"><i className="far fa-clock"></i></span>
               <span className="info-text">
-                <strong>Den konání:</strong> vždy v neděli od 9h - 10h
+                <span style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
+                  <strong>Čas konání:</strong>
+                  <span>
+                    neděle od 15 hodin (zimní čas)<br />
+                    neděle od 16 hodin (letní čas)
+                  </span>
+                </span>
               </span>
             </li>
             <li>
@@ -31,7 +37,7 @@ export default function Vycvik() {
             <li>
               <span className="vycvik-icon"><i className="fas fa-info-circle"></i></span>
               <span className="info-text">
-                V případě zájmu o kurz se dostavte v neděli od 9 hod. do areálu cvičiště, případně telefonicky kontaktujte naši výcvikářku pí. Benešovou (737 165 615)
+                V případě zájmu o kurz se dostavte 15 minut předem do areálu cvičiště, případně kontaktujte naši výcvikářku pí. Benešovou (737 165 615)
               </span>
             </li>
           </ul>
@@ -53,8 +59,8 @@ export default function Vycvik() {
             <li>pamlsky (ne granule)</li>
           </ul>
 
-          <h4 className="section-title">HLAVNÍ VÝCVIKÁŘ :</h4>
-          <p>Benešová Eva</p>
+          <h4 className="section-title">VÝCVIKÁŘI :</h4>
+          <p>Benešová Eva<br />Rosendorfová Martina</p>
 
           <h4 className="section-title">Po absolvování</h4>
           <p>Po absolvování výcvikového kurzu pro začátečníky se můžete přihlásit do kurzu pro pokročilé a pokračovat ve výcviku svého psa i nadále.</p>
