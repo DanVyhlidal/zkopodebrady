@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import fm from 'front-matter';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import './Aktuality.css';
 
 interface NewsFrontmatter {
@@ -55,7 +56,7 @@ export default function Aktuality() {
                 <div className="news-date">{dateStr}</div>
                 <h3 className="news-title">{item.attributes.title}</h3>
                 <div className="news-content">
-                  <ReactMarkdown>{item.body}</ReactMarkdown>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.body}</ReactMarkdown>
                 </div>
                 {item.attributes.external_link && (
                   <a href={item.attributes.external_link} target="_blank" rel="noopener noreferrer" className="external-link">
