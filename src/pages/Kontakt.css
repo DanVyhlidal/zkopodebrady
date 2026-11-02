@@ -68,7 +68,7 @@
 
 .kontakt-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 1.2rem;
 }
 
@@ -79,6 +79,7 @@
   flex-shrink: 0;
   display: flex;
   justify-content: flex-start;
+  padding-top: 0.2rem;
 }
 
 .kontakt-text {
@@ -95,6 +96,17 @@
 
 .kontakt-text a:hover {
   text-decoration: underline;
+}
+
+.kontakt-schedule-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  row-gap: 0.25rem;
+}
+
+.kontakt-schedule-grid span:nth-child(odd) {
+  white-space: nowrap;
 }
 
 @media (max-width: 900px) {

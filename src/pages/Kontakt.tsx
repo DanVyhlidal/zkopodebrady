@@ -33,14 +33,20 @@ export default function Kontakt() {
               </li>
               <li>
                 <span className="kontakt-icon"><i className="far fa-clock"></i></span>
-                <span className="kontakt-text">Provozní doba: neděle 9h - 12h, ostatní dny dle dohody</span>
+                <span className="kontakt-text">Provozní doba: neděle</span>
               </li>
               <li>
                 <span className="kontakt-icon"><i className="fas fa-user-clock"></i></span>
-                <span className="kontakt-text">
-                  Začátečník, pokročilý : Neděle 9h - 10h<br />
-                  Sportovní kynologie: Neděle 9h - 12h
-                </span>
+                <div className="kontakt-text">
+                  <div className="kontakt-schedule-grid">
+                    <span>Sportovní kynologie:</span>
+                    <span>neděle 9 - 12 hod.</span>
+                    <span>Začátečník, pokročilý :</span>
+                    <span>neděle 15 - 16 hod. (zimní čas)</span>
+                    <span></span>
+                    <span>neděle 16 - 17 hod. (letní čas)</span>
+                  </div>
+                </div>
               </li>
               <li>
                 <span className="kontakt-icon"><i className="far fa-envelope"></i></span>
