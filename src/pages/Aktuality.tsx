@@ -50,7 +50,7 @@ export default function Aktuality() {
           return (
             <article key={item.id} className="news-card">
               <div className="news-icon-column">
-                <div className="info-icon">i</div>
+                <div className="info-icon" translate="no">i</div>
               </div>
               <div className="news-content-column">
                 <div className="news-date">{dateStr}</div>
